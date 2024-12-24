@@ -8,6 +8,8 @@
   
   --spacing-banner: 700px;
   --spacing-banner-lg: 650px;
+  --spacing-table: 960px;
+  --spacing-table-xl: 700px;
 
   --aspect-banner: 263/700;
 
@@ -54,6 +56,12 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+  }
+
+  body {
+    background-color: var(--color-dark);
+    width: 100%;
+    min-height: 100dvh;
   }
 }
 
