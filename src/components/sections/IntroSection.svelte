@@ -67,8 +67,8 @@
 	<!-- Introduction -->
 	<div class="w-1/2 max-2xl:w-2/3 max-lg:w-full flex max-2xl:justify-center items-center">
 		<div class="w-2/3 max-lg:w-3/4 text-yellow flex flex-col justify-center space-y-7">
-			<h1 class="text-6xl max-lg:text-5xl font-semibold">Hi, It's <span>Binh</span></h1>
-			<h3 class="text-4xl max-lg:text-3xl font-semibold">
+			<h1 class="text-6xl max-lg:text-5xl max-sm:text-4xl font-semibold">Hi, It's <span>Binh</span></h1>
+			<h3 class="text-4xl max-lg:text-3xl max-sm:text-2xl font-semibold">
 				I'm a 
 				{#each descriptions as description, index}
 					{#if index == currentIndexDescription}
