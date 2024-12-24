@@ -3,8 +3,8 @@
 </script>
 
 <nav class="text-lg font-semibold space-x-14">
-	<a href="/">Information</a>
-	<a href="/">Education</a>
+	<a href="/#info">Information</a>
+	<a href="/">Experiences</a>
 	<a href="/">Projects</a>
 	<a href="/">Contact</a>
 	<a href="/more">More</a>

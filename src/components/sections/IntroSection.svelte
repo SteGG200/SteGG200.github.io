@@ -60,7 +60,7 @@
 			</div>
 			<!-- Name -->
 			<div class="w-full pt-6">
-				<p class="font-serif text-lightyellow text-lg text-center font-bold">Nguyễn Hòa Bình</p>
+				<p class="font-serif text-yellow-light text-lg text-center font-bold">Nguyễn Hòa Bình</p>
 			</div>
 		</div>
 	</div>

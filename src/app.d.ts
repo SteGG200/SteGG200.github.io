@@ -8,6 +8,11 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	interface IExperience {
+		year: number
+		description: string
+	}
 }
 
 export {};

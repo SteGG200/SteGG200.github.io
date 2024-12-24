@@ -8,7 +8,7 @@
 	]
 </script>
 
-<section class="w-full text-yellow flex justify-center">
+<section id="info" class="w-full text-yellow flex justify-center">
 	<div class="w-table max-xl:w-table-xl max-md:w-11/12 border-1 border-yellow rounded-xl p-8 max-lg:p-6 max-md:p-4 space-y-5 max-md:space-y-3">
 		<h3 class="text-2xl max-md:text-xl font-semibold">GENERAL INFORMATION</h3>
 		<table class="w-full max-sm:table-fixed">
@@ -16,7 +16,7 @@
 				{#each generalInformation as row}
 					<tr class="border-b-1 border-yellow">
 						<td class="p-4 max-md:p-3 max-sm:p-2 align-middle">{row.label}</td>
-            <td class="p-4 max-md:p-3 max-sm:p-2 align-middle text-lightyellow">{row.value}</td>
+            <td class="p-4 max-md:p-3 max-sm:p-2 align-middle text-yellow-light">{row.value}</td>
 					</tr>
 				{/each}
 			</tbody>
