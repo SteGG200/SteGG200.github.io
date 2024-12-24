@@ -4,9 +4,13 @@
 
 </script>
 
-<header class="fixed top-0 left-0 w-full border-b-1 border-yellow">
-	<div class="w-2/3 max-xl:w-11/12 mx-auto text-yellow flex justify-between py-6">
-		<a class="font-bold text-2xl" href="/">SteGG</a>
-		<NavBar/>
+<header class="sticky w-full border-b-1 border-yellow bg-dark z-10">
+	<div class="w-full text-yellow flex py-6">
+		<div class="w-1/2 flex justify-center">
+			<a class="font-bold text-2xl" href="/">SteGG</a>
+		</div>
+		<div class="w-1/2 flex justify-center">
+			<NavBar/>
+		</div>
 	</div>
 </header>

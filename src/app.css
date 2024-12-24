@@ -1,5 +1,43 @@
 @import 'tailwindcss';
 
+@theme {
+
+  --color-dark: oklch(13.85% 0.0277 240.35);
+  --color-yellow: oklch(75.09% 0.0856 83.92);
+  --color-lightyellow: oklch(92.75% 0.0287 84.59);
+  
+  --spacing-banner: 700px;
+
+  --aspect-banner: 263/700;
+
+  --background-image-banner: url('$lib/assets/banner.png');
+  --background-image-border-avatar: url('$lib/assets/border.png');
+
+
+  --animate-down: down 1.25s ease-out;
+  @keyframes down {
+    0% {
+      top : calc(100% * -1);
+    }
+    80%{
+      top: 20px;
+    }
+    100% {
+      top: 0;
+    }
+  };
+
+  --animate-cursor: cursor 1s steps(2, jump-none) infinite;
+  @keyframes cursor {
+    from {
+      border-color: var(--color-yellow);
+    }
+    to {
+      border-color: var(--color-dark);
+    }
+  };
+}
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -16,4 +54,9 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
+
+@utility absolute-avatar-center {
+  top: calc(44% / 2);
+  left: calc(44% / 2);
 }

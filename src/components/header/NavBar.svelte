@@ -2,7 +2,7 @@
 
 </script>
 
-<nav class="text-lg font-semibold space-x-10">
+<nav class="text-lg font-semibold space-x-14">
 	<a href="/">Information</a>
 	<a href="/">Education</a>
 	<a href="/">Projects</a>
