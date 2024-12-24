@@ -13,6 +13,17 @@ declare global {
 		year: number
 		description: string
 	}
+
+	interface IProjectInfo {
+		owner: string
+		name: string
+	}
+
+	interface IRepository {
+		fullName: string
+		description: string
+		language: string
+	}
 }
 
 export {};

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import LabelSection from "$components/LabelSection.svelte";
 	import ProgressBar from "$components/ProgressBar.svelte";
 
 	const experiences : IExperience[] = [
@@ -9,9 +10,9 @@
 	]
 </script>
 
-<section id="experiences" class="w-full text-yellow">
+<section id="experiences" class="w-full text-yellow mb-35">
 	<div class="w-5/6 max-md:w-11/12 mx-auto space-y-5">
-		<h3 class="text-2xl max-md:text-xl font-semibold">EXPERIENCES</h3>
+		<LabelSection>EXPERIENCES</LabelSection>
 		<ProgressBar start={2007} events={experiences} />
 	</div>
 </section>

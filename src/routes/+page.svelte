@@ -4,17 +4,20 @@
 	import ExperiencesSection from "$components/sections/ExperiencesSection.svelte";
 	import InformationSection from "$components/sections/InformationSection.svelte";
 	import IntroSection from "$components/sections/IntroSection.svelte";
+	import ProjectsSection from "$components/sections/ProjectsSection.svelte";
 	import { ChevronsDown } from "lucide-svelte";
 
 	let isLoading = $state(true);
 	let isFirstVisit = $state(true);
 
 	$effect(() => {
+		// Check if user first visit the website
 		const firstVisitValue = sessionStorage.getItem("isFirstVisit");
 		if(!firstVisitValue){
 			sessionStorage.setItem("isFirstVisit", "1");
 		}
 		isFirstVisit = firstVisitValue ? false : true;
+
 		isLoading = false;
 	})
 </script>
@@ -33,5 +36,6 @@
 		</div>
 		<InformationSection/>
 		<ExperiencesSection/>
+		<ProjectsSection/>
 	</main>
 {/if}

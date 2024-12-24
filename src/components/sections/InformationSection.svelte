@@ -1,4 +1,6 @@
 <script lang="ts">
+	import LabelSection from "$components/LabelSection.svelte";
+
 	const generalInformation : {label: string, value: string}[] = [
 		{label: "Full Name", value: "Nguyễn Hòa Bình"},
 		{label: "Current Location", value: "Hanoi, Vietnam"},
@@ -10,7 +12,7 @@
 
 <section id="info" class="w-full text-yellow flex justify-center">
 	<div class="w-table max-xl:w-table-xl max-md:w-11/12 border-1 border-yellow rounded-xl p-8 max-lg:p-6 max-md:p-4 space-y-5 max-md:space-y-3">
-		<h3 class="text-2xl max-md:text-xl font-semibold">GENERAL INFORMATION</h3>
+		<LabelSection>GENERAL INFORMATION</LabelSection>
 		<table class="w-full max-sm:table-fixed">
 			<tbody class="[&_tr:last-child]:border-0">
 				{#each generalInformation as row}
