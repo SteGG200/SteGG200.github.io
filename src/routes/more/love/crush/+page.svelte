@@ -1,5 +1,6 @@
 <script lang="ts">
 	import avatar from '$lib/assets/more/02/01.jpg'
+	import { Home } from 'lucide-svelte';
 
 	const info = [
 		{label: 'Ngày sinh', value: '01/02/2007'},
@@ -11,6 +12,9 @@
 
 <main class="w-4xl mx-auto py-20 text-yellow">
 	<div class="bg-dark-sm border-1 border-yellow rounded-xl p-6 space-y-4">
+		<a href="/more/love">
+			<Home/>
+		</a>
 		<img class="w-[220px] aspect-square border-1 border-yellow rounded-full" src={avatar} alt="PMH">
 		<h2 class="text-2xl font-semibold">Phạm Mai Hương</h2>
 		<table>

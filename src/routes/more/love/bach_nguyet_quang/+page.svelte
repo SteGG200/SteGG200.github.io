@@ -6,6 +6,7 @@
 	import _06 from '$lib/assets/more/01/06.mp4'
 	import _07 from '$lib/assets/more/01/07.jpg'
 	import _08 from '$lib/assets/more/01/08.jpg'
+	import { Home } from 'lucide-svelte';
 
 	const info = [
 		{label: 'Ngày sinh', value: '07/04/2006'},
@@ -18,6 +19,9 @@
 
 <main class="w-4xl mx-auto py-20 text-yellow">
 	<div class="bg-dark-sm border-1 border-yellow rounded-xl p-6 space-y-4">
+		<a href="/more/love">
+			<Home/>
+		</a>
 		<img class="w-[220px] aspect-square border-1 border-yellow rounded-full" src={avatar} alt="Li Min Xuan">
 		<h2 class="text-2xl font-semibold">Lý Mẫn Hiên <span class="font-medium">(李闽轩)</span></h2>
 		<table>

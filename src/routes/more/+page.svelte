@@ -11,6 +11,9 @@ import Header from "$components/header/Header.svelte";
 		<p class="text-3xl text-center pt-6">
 			Sorry! I have not done this page yet.
 		</p>
+		<a class="text-dark-sm" href="/more/love">
+			love
+		</a>
 	</main>
 	<Footer/>
 </div>
