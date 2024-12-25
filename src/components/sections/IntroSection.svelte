@@ -47,8 +47,7 @@
 	<!-- Banner profile -->
 	<div class="flex w-1/2 justify-center max-2xl:w-1/3">
 		<div
-			class="h-banner max-lg:h-banner-lg aspect-banner bg-banner relative bg-cover"
-			class:animate-down={isFirstVisit}
+			class="h-banner max-lg:h-banner-lg aspect-banner bg-banner relative bg-cover" class:animate-down={isFirstVisit}
 		>
 			<!-- Avatar -->
 			<div class="flex h-[55%] w-full items-end justify-center">
