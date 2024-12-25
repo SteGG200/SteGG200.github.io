@@ -11,6 +11,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       
+      - name: Install package manager
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - name: Set up Node.js environment
         uses: actions/setup-node@v4
         with:
