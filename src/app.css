@@ -16,8 +16,8 @@
 
 	--aspect-banner: 263/700;
 
-	--background-image-banner: url('$lib/assets/banner.png');
-	--background-image-border-avatar: url('$lib/assets/border.png');
+	--background-image-banner: url('$lib/assets/banner.webp');
+	--background-image-border-avatar: url('$lib/assets/border.webp');
 
 	--animate-down: down 1.25s ease-out;
 	@keyframes down {
