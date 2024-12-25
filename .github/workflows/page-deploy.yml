@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Install package manager
         uses: pnpm/action-setup@v4
         with:
@@ -27,12 +27,12 @@ jobs:
         with:
           node-version: 20
           cache: 'pnpm'
-      
+
       - name: Set up Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: sveltekit
-      
+
       - name: Restore cache
         uses: actions/cache@v4
         with:
@@ -41,20 +41,20 @@ jobs:
           key: ${{ runner.os }}-sveltekit-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.svelte')}}
           restore-keys: |
             ${{ runner.os }}-sveltekit-${{ hashFiles('**/pnpm-lock.yaml') }}-
-      
+
       - name: Install dependencies
         run: pnpm install
         working-directory: .
-      
+
       - name: Build and generate static files
         run: pnpm build
         working-directory: .
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
-  
+
   deploy:
     environment:
       name: github-pages

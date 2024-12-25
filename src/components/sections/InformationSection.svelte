@@ -1,24 +1,26 @@
 <script lang="ts">
-	import LabelSection from "$components/LabelSection.svelte";
+	import LabelSection from '$components/LabelSection.svelte';
 
-	const generalInformation : {label: string, value: string}[] = [
-		{label: "Full Name", value: "Nguyễn Hòa Bình"},
-		{label: "Current Location", value: "Hanoi, Vietnam"},
-		{label: "Current Job", value: "Student at HSGS"},
-		{label: "Hobbies", value: "Gaming, Coding, Listening to Music"},
-		{label: "Favorite Club", value: "SKT T1"}
-	]
+	const generalInformation: { label: string; value: string }[] = [
+		{ label: 'Full Name', value: 'Nguyễn Hòa Bình' },
+		{ label: 'Current Location', value: 'Hanoi, Vietnam' },
+		{ label: 'Current Job', value: 'Student at HSGS' },
+		{ label: 'Hobbies', value: 'Gaming, Coding, Listening to Music' },
+		{ label: 'Favorite Club', value: 'SKT T1' }
+	];
 </script>
 
-<section id="info" class="scroll-mt-30 w-full text-yellow flex justify-center">
-	<div class="w-table max-xl:w-table-xl max-md:w-11/12 border-1 border-yellow rounded-xl p-8 max-lg:p-6 max-md:p-4 space-y-5 max-md:space-y-3">
+<section id="info" class="text-yellow flex w-full scroll-mt-30 justify-center">
+	<div
+		class="w-table max-xl:w-table-xl border-yellow space-y-5 rounded-xl border-1 p-8 max-lg:p-6 max-md:w-11/12 max-md:space-y-3 max-md:p-4"
+	>
 		<LabelSection>GENERAL INFORMATION</LabelSection>
 		<table class="w-full max-sm:table-fixed">
 			<tbody class="[&_tr:last-child]:border-0">
 				{#each generalInformation as row}
-					<tr class="border-b-1 border-yellow">
-						<td class="p-4 max-md:p-3 max-sm:p-2 align-middle">{row.label}</td>
-            <td class="p-4 max-md:p-3 max-sm:p-2 align-middle text-yellow-light">{row.value}</td>
+					<tr class="border-yellow border-b-1">
+						<td class="p-4 align-middle max-md:p-3 max-sm:p-2">{row.label}</td>
+						<td class="text-yellow-light p-4 align-middle max-md:p-3 max-sm:p-2">{row.value}</td>
 					</tr>
 				{/each}
 			</tbody>

@@ -1,48 +1,46 @@
 @import 'tailwindcss';
 
 @theme {
+	--color-dark: oklch(13.85% 0.0277 240.35);
+	--color-dark-sm: oklch(25.33% 0.012 248.3);
+	--color-yellow: oklch(75.09% 0.0856 83.92);
+	--color-yellow-light: oklch(92.75% 0.0287 84.59);
 
-  --color-dark: oklch(13.85% 0.0277 240.35);
-  --color-dark-sm: oklch(25.33% 0.012 248.3);
-  --color-yellow: oklch(75.09% 0.0856 83.92);
-  --color-yellow-light: oklch(92.75% 0.0287 84.59);
-  
-  --spacing-banner: 700px;
-  --spacing-banner-lg: 650px;
-  --spacing-table: 960px;
-  --spacing-table-xl: 700px;
-  --spacing-experience-section: 1200px;
-  --spacing-bar: 10px;
-  --spacing-project-section: 1200px;
+	--spacing-banner: 700px;
+	--spacing-banner-lg: 650px;
+	--spacing-table: 960px;
+	--spacing-table-xl: 700px;
+	--spacing-experience-section: 1200px;
+	--spacing-bar: 10px;
+	--spacing-project-section: 1200px;
 
-  --aspect-banner: 263/700;
+	--aspect-banner: 263/700;
 
-  --background-image-banner: url('$lib/assets/banner.png');
-  --background-image-border-avatar: url('$lib/assets/border.png');
+	--background-image-banner: url('$lib/assets/banner.png');
+	--background-image-border-avatar: url('$lib/assets/border.png');
 
+	--animate-down: down 1.25s ease-out;
+	@keyframes down {
+		0% {
+			top: calc(100% * -1);
+		}
+		80% {
+			top: 20px;
+		}
+		100% {
+			top: 0;
+		}
+	}
 
-  --animate-down: down 1.25s ease-out;
-  @keyframes down {
-    0% {
-      top : calc(100% * -1);
-    }
-    80%{
-      top: 20px;
-    }
-    100% {
-      top: 0;
-    }
-  };
-
-  --animate-cursor: cursor 1s steps(2, jump-none) infinite;
-  @keyframes cursor {
-    from {
-      border-color: var(--color-yellow);
-    }
-    to {
-      border-color: var(--color-dark);
-    }
-  };
+	--animate-cursor: cursor 1s steps(2, jump-none) infinite;
+	@keyframes cursor {
+		from {
+			border-color: var(--color-yellow);
+		}
+		to {
+			border-color: var(--color-dark);
+		}
+	}
 }
 
 /*
@@ -54,103 +52,103 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-  
-  html {
-    @apply scroll-smooth
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
 
-  body {
-    background-color: var(--color-dark);
-    width: 100%;
-    min-height: 100dvh;
-  }
+	html {
+		@apply scroll-smooth;
+	}
+
+	body {
+		background-color: var(--color-dark);
+		width: 100%;
+		min-height: 100dvh;
+	}
 }
 
 @utility absolute-avatar-center {
-  top: calc(44% / 2);
-  left: calc(44% / 2);
+	top: calc(44% / 2);
+	left: calc(44% / 2);
 }
 
-@utility timeline{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: calc((100% - var(--spacing-bar)) / 2);
-  width: var(--spacing-bar);
-  height: calc(100% + var(--spacing-bar));
-  background-color: var(--color-yellow);
-  border-radius: 9999px;
+@utility timeline {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: calc((100% - var(--spacing-bar)) / 2);
+	width: var(--spacing-bar);
+	height: calc(100% + var(--spacing-bar));
+	background-color: var(--color-yellow);
+	border-radius: 9999px;
 }
 
 @utility left-event {
-  right: calc((100% + var(--spacing-bar)) / 2 + 2 * var(--spacing-bar));
-  &::before{
-    right: calc(-2 * var(--spacing-bar));
-  }
-  &::after{
-    right: calc(-3.5 * var(--spacing-bar));
-  }
+	right: calc((100% + var(--spacing-bar)) / 2 + 2 * var(--spacing-bar));
+	&::before {
+		right: calc(-2 * var(--spacing-bar));
+	}
+	&::after {
+		right: calc(-3.5 * var(--spacing-bar));
+	}
 }
 
 @utility right-event {
-  left: calc((100% + var(--spacing-bar)) / 2 + 2 * var(--spacing-bar));
-  &::before{
-    left: calc(-2 * var(--spacing-bar));
-  }
-  &::after{
-    left: calc(-3.5 * var(--spacing-bar));
-  }
+	left: calc((100% + var(--spacing-bar)) / 2 + 2 * var(--spacing-bar));
+	&::before {
+		left: calc(-2 * var(--spacing-bar));
+	}
+	&::after {
+		left: calc(-3.5 * var(--spacing-bar));
+	}
 }
 
 @utility line {
-  content: "";
-  display: block;
-  position: absolute;
-  width: calc(var(--spacing-bar) * 2);
-  border-top: 1px solid var(--color-yellow);
+	content: '';
+	display: block;
+	position: absolute;
+	width: calc(var(--spacing-bar) * 2);
+	border-top: 1px solid var(--color-yellow);
 }
 
 @utility point {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  width: calc(var(--spacing-bar) * 1.75);
-  aspect-ratio: 1/1;
-  background-color: var(--color-yellow-light);
-  border-radius: 9999px;
-  z-index: 10;
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 0;
+	width: calc(var(--spacing-bar) * 1.75);
+	aspect-ratio: 1/1;
+	background-color: var(--color-yellow-light);
+	border-radius: 9999px;
+	z-index: 10;
 }
 
 @utility underline-decoration {
-  position: relative;
-  &::after{
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-yellow);
-    transform: scale(0);
-    transform-origin: center;
-    transition: transform 0.2s linear;
-  }
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background-color: var(--color-yellow);
+		transform: scale(0);
+		transform-origin: center;
+		transition: transform 0.2s linear;
+	}
 
-  &:hover{
-    @media (hover: hover){
-      &::after{
-        transform: scale(1);
-      }
-    }
-  }
+	&:hover {
+		@media (hover: hover) {
+			&::after {
+				transform: scale(1);
+			}
+		}
+	}
 }

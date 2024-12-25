@@ -1,13 +1,11 @@
 <script lang="ts">
-	import { Home } from "lucide-svelte";
-
-
+	import { Home } from 'lucide-svelte';
 </script>
 
-<main class="w-full min-h-dvh flex p-16 text-yellow text-xl">
-	<div class="flex-1 bg-dark-sm rounded-xl p-8">
+<main class="text-yellow flex min-h-dvh w-full p-16 text-xl">
+	<div class="bg-dark-sm flex-1 rounded-xl p-8">
 		<a href="/">
-			<Home/>
+			<Home />
 		</a>
 		<ul>
 			<li>

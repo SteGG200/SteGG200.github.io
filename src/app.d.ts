@@ -10,19 +10,19 @@ declare global {
 	}
 
 	interface IExperience {
-		year: number
-		description: string
+		year: number;
+		description: string;
 	}
 
 	interface IProjectInfo {
-		owner: string
-		name: string
+		owner: string;
+		name: string;
 	}
 
 	interface IRepository {
-		fullName: string
-		description: string
-		language: string
+		fullName: string;
+		description: string;
+		language: string;
 	}
 }
 

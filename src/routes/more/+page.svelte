@@ -1,19 +1,13 @@
 <script lang="ts">
-	import Footer from "$components/footer/Footer.svelte";
-import Header from "$components/header/Header.svelte";
-
-	
+	import Footer from '$components/footer/Footer.svelte';
+	import Header from '$components/header/Header.svelte';
 </script>
 
-<div class="min-h-dvh flex flex-col">
-	<Header/>
-	<main class="flex-1 text-yellow">
-		<p class="text-3xl text-center pt-6">
-			Sorry! I have not done this page yet.
-		</p>
-		<a class="text-dark-sm" href="/more/love">
-			love
-		</a>
+<div class="flex min-h-dvh flex-col">
+	<Header />
+	<main class="text-yellow flex-1">
+		<p class="pt-6 text-center text-3xl">Sorry! I have not done this page yet.</p>
+		<a class="text-dark-sm" href="/more/love"> love </a>
 	</main>
-	<Footer/>
+	<Footer />
 </div>
