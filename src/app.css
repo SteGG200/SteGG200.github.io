@@ -11,7 +11,7 @@
   --spacing-table: 960px;
   --spacing-table-xl: 700px;
   --spacing-experience-section: 1200px;
-  --spacing-bar: 16px;
+  --spacing-bar: 10px;
   --spacing-project-section: 1200px;
 
   --aspect-banner: 263/700;
@@ -86,22 +86,22 @@
 }
 
 @utility left-event {
-  right: calc((100% + var(--spacing-bar)) / 2 + 1 * var(--spacing-bar));
+  right: calc((100% + var(--spacing-bar)) / 2 + 2 * var(--spacing-bar));
   &::before{
-    right: calc(-1 * var(--spacing-bar));
+    right: calc(-2 * var(--spacing-bar));
   }
   &::after{
-    right: calc(-2 * var(--spacing-bar) - 1px);
+    right: calc(-3.5 * var(--spacing-bar));
   }
 }
 
 @utility right-event {
-  left: calc((100% + var(--spacing-bar)) / 2 + 1 * var(--spacing-bar));
+  left: calc((100% + var(--spacing-bar)) / 2 + 2 * var(--spacing-bar));
   &::before{
-    left: calc(-1 * var(--spacing-bar));
+    left: calc(-2 * var(--spacing-bar));
   }
   &::after{
-    left: calc(-2 * var(--spacing-bar) - 1px);
+    left: calc(-3.5 * var(--spacing-bar));
   }
 }
 
@@ -109,7 +109,7 @@
   content: "";
   display: block;
   position: absolute;
-  width: var(--spacing-bar);
+  width: calc(var(--spacing-bar) * 2);
   border-top: 1px solid var(--color-yellow);
 }
 
@@ -118,7 +118,7 @@
   display: block;
   position: absolute;
   top: 0;
-  width: var(--spacing-bar);
+  width: calc(var(--spacing-bar) * 1.75);
   aspect-ratio: 1/1;
   background-color: var(--color-yellow-light);
   border-radius: 9999px;
