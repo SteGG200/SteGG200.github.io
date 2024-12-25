@@ -3,6 +3,7 @@
 @theme {
 
   --color-dark: oklch(13.85% 0.0277 240.35);
+  --color-dark-sm: oklch(25.33% 0.012 248.3);
   --color-yellow: oklch(75.09% 0.0856 83.92);
   --color-yellow-light: oklch(92.75% 0.0287 84.59);
   
