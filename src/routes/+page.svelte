@@ -1,5 +1,6 @@
 <script lang="ts">
-	import Header from "$components/header/Header.svelte";
+	import Footer from "$components/footer/Footer.svelte";
+import Header from "$components/header/Header.svelte";
 	import Loading from "$components/Loading.svelte";
 	import ExperiencesSection from "$components/sections/ExperiencesSection.svelte";
 	import InformationSection from "$components/sections/InformationSection.svelte";
@@ -27,7 +28,7 @@
 {#if isLoading}
   <Loading/>
 {:else}
-	<main class="flex flex-col space-y-20">
+	<main class="flex flex-col space-y-20 mb-20">
 		<div class="h-full">
 			<IntroSection isFirstVisit={isFirstVisit}/>
 			<div class="w-full mt-16 mb-10">
@@ -39,3 +40,5 @@
 		<ProjectsSection/>
 	</main>
 {/if}
+
+<Footer/>
