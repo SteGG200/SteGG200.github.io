@@ -10,7 +10,7 @@
 	]
 </script>
 
-<section id="info" class="w-full text-yellow flex justify-center">
+<section id="info" class="scroll-mt-30 w-full text-yellow flex justify-center">
 	<div class="w-table max-xl:w-table-xl max-md:w-11/12 border-1 border-yellow rounded-xl p-8 max-lg:p-6 max-md:p-4 space-y-5 max-md:space-y-3">
 		<LabelSection>GENERAL INFORMATION</LabelSection>
 		<table class="w-full max-sm:table-fixed">

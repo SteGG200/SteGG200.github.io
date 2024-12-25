@@ -11,7 +11,7 @@
 <div class="border-1 border-yellow rounded-lg p-4 space-y-2">
 	<h3 class="text-lg flex space-x-1">
 		<BookMarked strokeWidth={1.5}/>
-		<a class="hover:underline font-semibold truncate" href={`https://github.com/${repository.fullName}`}>{repository.fullName}</a>
+		<a class="underline-decoration font-semibold truncate" href={`https://github.com/${repository.fullName}`}>{repository.fullName}</a>
 	</h3>
 	<p>{repository.description}</p>
 	<span>{repository.language}</span>
