@@ -16,7 +16,7 @@
 	]
 </script>
 
-<main class="w-4xl mx-auto pt-20 text-yellow">
+<main class="w-4xl mx-auto py-20 text-yellow">
 	<div class="bg-dark-sm border-1 border-yellow rounded-xl p-6 space-y-4">
 		<img class="w-[220px] aspect-square border-1 border-yellow rounded-full" src={avatar} alt="Li Min Xuan">
 		<h2 class="text-2xl font-semibold">Lý Mẫn Hiên <span class="font-medium">(李闽轩)</span></h2>
