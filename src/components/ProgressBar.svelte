@@ -15,7 +15,7 @@
 		{#each events as event, index}
 			<div class="absolute border-1 border-yellow rounded-lg p-2 max-md:p-1.5 before:line after:point" class:left-event={index % 2 == 0} class:right-event={index % 2 == 1} style={`top: calc(${~~((currentYear - event.year) / (currentYear - start) * 100)}%)`}>
 				<h3 class="text-xl max-md:text-lg font-bold">{event.year}</h3>
-				<p>{event.description}</p>
+				<p class="text-yellow-light">{event.description}</p>
 			</div>
 		{/each}
 	</div>
