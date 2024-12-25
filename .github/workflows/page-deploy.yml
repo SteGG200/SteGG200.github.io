@@ -1,0 +1,57 @@
+name: Github Page Deploy
+on:
+	push:
+		branches:
+			- master
+jobs:
+	build:
+		runs-on: ubuntu-latest
+
+		steps:
+			- name: Checkout repository
+				uses: actions/checkout@v4
+			
+			- name: Set up Node.js environment
+				uses: actions/setup-node@v4
+				with:
+					node-version: 20
+					cache: 'pnpm'
+			
+			- name: Set up Pages
+				uses: actions/configure-pages@v5
+				with:
+					static_site_generator: sveltekit
+			
+			- name: Restore cache
+				uses: actions/cache@v4
+				with:
+					path: |
+						.svelte-kit
+					key: ${{ runner.os }}-sveltekit-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.svelte')}}
+					restore-keys: |
+						${{ runner.os }}-sveltekit-${{ hashFiles('**/pnpm-lock.yaml') }}-
+			
+			- name: Install dependencies
+				run: pnpm install
+				working-directory: .
+			
+			- name: Build and generate static files
+				run: pnpm build
+				working-directory: .
+			
+			- name: Upload artifact
+				uses: actions/upload-pages-artifact@v3
+				with:
+					path: ./build
+	
+	deploy:
+		environment:
+			name: github-pages
+			url: ${{ steps.deployment.outputs.page_url }}
+		runs-on: ubuntu-latest
+		needs: build
+		steps:
+			- name: Deploy to GitHub Pages
+				id: deployment
+				uses: actions/deploy-pages@v4
+				
