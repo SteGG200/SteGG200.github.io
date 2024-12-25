@@ -11,7 +11,7 @@
 </script>
 
 <section id="experiences" class="w-full text-yellow mb-35">
-	<div class="w-5/6 max-md:w-11/12 mx-auto space-y-5">
+	<div class="w-experience-section max-xl:w-5/6 max-md:w-11/12 mx-auto space-y-5">
 		<LabelSection>EXPERIENCES</LabelSection>
 		<ProgressBar start={2007} events={experiences} />
 	</div>
