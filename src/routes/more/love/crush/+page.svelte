@@ -33,8 +33,8 @@
 		</table>
 		<p class="text-yellow-light">
 			<span class="text-yellow font-semibold">Mô tả: </span>
-			Mình crush bạn này từ năm lớp 4, học cùng lớp trong năm cấp 2. Đến cấp 3 thì mình lên Hà Nội học
-			nên cũng không bao giờ gặp bạn nữa.
+			Mình crush bạn này từ năm lớp 4. Đến năm cấp 2 thì được học cùng lớp với bạn, nhưng mà mình với bạn cũng ít khi nào nói chuyện với nhau. Vì thế mà mình không dám nói ra suy nghĩ của mình. Đến cấp 3 thì mình lên Hà Nội học
+			nên cũng hiếm khi gặp bạn nữa. Mặc dù vậy, mình vẫn chưa ngừng thích bạn, thậm chí càng ngày càng nhớ hình ảnh của bạn hơn 🥰. Mình đã từng thử nhắn tin với bạn nhưng kết quả là fail 😔. Có lẽ sau này mình với bạn sẽ không bao giờ gặp nhau nữa.
 		</p>
 		<!-- <p class="font-semibold text-lg">Dưới đây là một vài bức ảnh hoặc video mà mình có được:</p>
 		<div class="max-w-[400px] mx-auto space-y-2">
