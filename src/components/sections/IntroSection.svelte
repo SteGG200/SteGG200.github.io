@@ -1,54 +1,14 @@
 <script lang="ts">
 	import PersonalLink from '$components/PersonalLink.svelte';
+	import TypingDescription from '$components/TypingDescription.svelte';
 	import avatar from '$lib/assets/avatar.jpg';
 	import { Facebook, Github, Mail } from 'lucide-svelte';
-
-	interface IntroSectionProps {
-		isFirstVisit: boolean;
-	}
-
-	const descriptions = ['Developer', 'LOL Player', 'Fedora User', 'Music Enjoyer'];
-
-	let currentIndexDescription = $state(0);
-
-	const timeDelay = 5 * 1000;
-
-	let { isFirstVisit }: IntroSectionProps = $props();
-
-	const typingAnimation = (node: HTMLElement, { speed = 1 }: { speed?: number }) => {
-		// speed: letters / 0.01 s
-		const valid = node.childNodes.length === 1 && node.childNodes[0].nodeType === Node.TEXT_NODE;
-
-		if (!valid) {
-			throw new Error(`This transition only works on elements with a single text node child`);
-		}
-
-		const text = node.textContent!;
-		const duration = text.length / (speed * 0.01);
-
-		return {
-			duration,
-			tick: (t: number) => {
-				const i = ~~(text.length * t);
-				node.textContent = text.slice(0, i);
-			}
-		};
-	};
-
-	$effect(() => {
-		setInterval(() => {
-			currentIndexDescription += 1;
-			if (currentIndexDescription >= descriptions.length) currentIndexDescription = 0;
-		}, timeDelay);
-	});
 </script>
 
 <section class="flex w-full max-lg:flex-col max-lg:items-center max-lg:space-y-6">
 	<!-- Banner profile -->
 	<div class="flex w-1/2 justify-center max-2xl:w-1/3">
-		<div
-			class="h-banner max-lg:h-banner-lg aspect-banner bg-banner relative bg-cover" class:animate-down={isFirstVisit}
-		>
+		<div class="h-banner max-lg:h-banner-lg aspect-banner bg-banner animate-down relative bg-cover">
 			<!-- Avatar -->
 			<div class="flex h-[55%] w-full items-end justify-center">
 				<div class="relative aspect-square w-[83%]">
@@ -72,16 +32,7 @@
 			<h1 class="text-6xl font-semibold max-lg:text-5xl max-sm:text-4xl">
 				Hi, It's <span>Binh</span>
 			</h1>
-			<h3 class="text-4xl font-semibold max-lg:text-3xl max-sm:text-2xl">
-				I'm a
-				{#each descriptions as description, index}
-					{#if index == currentIndexDescription}
-						<span class="after:animate-cursor after:border-l-2" in:typingAnimation={{ speed: 1 }}
-							>{description}</span
-						>
-					{/if}
-				{/each}
-			</h3>
+			<TypingDescription />
 			<p class="text-lg">
 				A skilled summoner in the realm of web development, wielding modern technologies to forge
 				powerful and elegant digital experiences.
