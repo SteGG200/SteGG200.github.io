@@ -13,7 +13,7 @@
 		}
 
 		const typingEasing = 0.2;
-		const text = node.textContent;
+		const text = node.textContent ?? "";
 		const typingTime = text.length / (speed * 0.01);
 		const duration = typingTime * 2 + (1 - typingEasing * 2) * typingTime;
 		timeDelay = duration;
