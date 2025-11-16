@@ -4,9 +4,10 @@
 
 	const experiences: IExperience[] = [
 		{ year: 2007, description: 'I was born' },
-		{ year: 2020, description: 'I started learning programming' },
-		{ year: 2022, description: 'I studied at HSGS' },
-		{ year: 2024, description: 'I participated in ICPC national for the first time' }
+		{ year: 2020, description: 'Started learning programming' },
+		{ year: 2022, description: 'Studied at HSGS' },
+		{ year: 2024, description: 'Participated in ICPC national for the first time' },
+		{ year: 2025, description: 'Studied at UET-VNU' }
 	];
 </script>
 

@@ -4,9 +4,9 @@
 
 	const repositories: IRepository[] = [
 		{
-			fullName: 'SteGG200/tester_interactive',
-			description: 'Tester CLI for interactive problem',
-			language: 'Python'
+			fullName: 'SteGG200/storage',
+			description: 'A self-hosted file storage server.',
+			language: 'Go + Nextjs'
 		},
 		{
 			fullName: 'SteGG200/gomoku-onl',

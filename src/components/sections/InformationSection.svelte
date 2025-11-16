@@ -4,7 +4,7 @@
 	const generalInformation: { label: string; value: string }[] = [
 		{ label: 'Full Name', value: 'Nguyễn Hòa Bình' },
 		{ label: 'Current Location', value: 'Hanoi, Vietnam' },
-		{ label: 'Current Job', value: 'Student at HSGS' },
+		{ label: 'Current Job', value: 'Student at UET-VNU' },
 		{ label: 'Hobbies', value: 'Gaming, Coding, Listening to Music' },
 		{ label: 'Favorite Club', value: 'SKT T1' }
 	];
