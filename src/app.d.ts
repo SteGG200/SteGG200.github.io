@@ -8,12 +8,12 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
-	
+
 	interface IconCustomProps {
-		size: number
-		strokeWidth: number
-		class: string
-		[key: string]: any
+		size: number;
+		strokeWidth: number;
+		class: string;
+		[key: string]: any;
 	}
 
 	interface IExperience {

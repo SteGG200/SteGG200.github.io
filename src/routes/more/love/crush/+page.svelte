@@ -15,11 +15,7 @@
 		<a href="/more/love">
 			<Home />
 		</a>
-		<img
-			class="border-yellow aspect-square w-[220px] rounded-full border"
-			src={avatar}
-			alt="PMH"
-		/>
+		<img class="border-yellow aspect-square w-[220px] rounded-full border" src={avatar} alt="PMH" />
 		<h2 class="text-2xl font-semibold">Phạm Mai Hương</h2>
 		<table>
 			<tbody>
