@@ -8,7 +8,7 @@
 	const { repository }: ProjectCardProps = $props();
 </script>
 
-<div class="border-yellow space-y-2.5 rounded-lg border-1 p-4">
+<div class="border-yellow space-y-2.5 rounded-lg border p-4">
 	<h3 class="flex space-x-1 text-lg">
 		<BookMarked strokeWidth={1.5} />
 		<a

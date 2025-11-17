@@ -14,7 +14,7 @@
 <a
 	{href}
 	target="_blank"
-	class="border-yellow hover:bg-yellow group/githublink block w-fit rounded-full border-1 p-[10px] transition-colors"
+	class="border-yellow hover:bg-yellow group/githublink block w-fit rounded-full border p-[10px] transition-colors"
 >
 	<Icon
 		{size}

@@ -18,12 +18,12 @@
 </script>
 
 <main class="text-yellow mx-auto w-4xl py-20">
-	<div class="bg-dark-sm border-yellow space-y-4 rounded-xl border-1 p-6">
+	<div class="bg-dark-sm border-yellow space-y-4 rounded-xl border p-6">
 		<a href="/more/love">
 			<Home />
 		</a>
 		<img
-			class="border-yellow aspect-square w-[220px] rounded-full border-1"
+			class="border-yellow aspect-square w-[220px] rounded-full border"
 			src={avatar}
 			alt="Li Min Xuan"
 		/>

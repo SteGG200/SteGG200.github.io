@@ -12,7 +12,7 @@
 
 <section id="info" class="text-yellow flex w-full scroll-mt-30 justify-center">
 	<div
-		class="w-table max-xl:w-table-xl border-yellow space-y-5 rounded-xl border-1 p-8 max-lg:p-6 max-md:w-11/12 max-md:space-y-3 max-md:p-4"
+		class="w-table max-xl:w-table-xl border-yellow space-y-5 rounded-xl border p-8 max-lg:p-6 max-md:w-11/12 max-md:space-y-3 max-md:p-4"
 	>
 		<LabelSection>GENERAL INFORMATION</LabelSection>
 		<table class="w-full max-sm:table-fixed">

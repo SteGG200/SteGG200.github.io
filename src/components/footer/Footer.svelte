@@ -5,7 +5,7 @@
 	import Github from '$components/icons/Github.svelte';
 </script>
 
-<footer class="border-yellow text-yellow w-full border-t-1 py-6">
+<footer class="border-yellow text-yellow w-full border-t py-6">
 	<div class="mx-auto w-fit space-y-3 text-center">
 		<div class="space-y-3">
 			<div class="flex justify-center space-x-5">
@@ -17,7 +17,7 @@
 				<p>This website is created in 25/12/2024</p>
 			</div>
 		</div>
-		<div class="border-yellow border-t-1 pt-3">
+		<div class="border-yellow border-t pt-3">
 			<p>© Nguyễn Hòa Bình | All Rights Reserved</p>
 		</div>
 	</div>
