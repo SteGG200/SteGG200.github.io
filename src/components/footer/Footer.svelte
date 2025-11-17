@@ -5,7 +5,7 @@
 	import Github from '$components/icons/Github.svelte';
 </script>
 
-<footer class="border-yellow text-yellow w-full border-t py-6">
+<footer class="border-yellow w-full border-t py-6">
 	<div class="mx-auto w-fit space-y-3 text-center">
 		<div class="space-y-3">
 			<div class="flex justify-center space-x-5">

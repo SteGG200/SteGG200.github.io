@@ -11,7 +11,7 @@
 	];
 </script>
 
-<section id="experiences" class="text-yellow mb-35 w-full scroll-mt-30">
+<section id="experiences" class="mb-35 w-full scroll-mt-30">
 	<div class="w-experience-section mx-auto space-y-5 max-xl:w-5/6 max-md:w-11/12">
 		<LabelSection>EXPERIENCES</LabelSection>
 		<ProgressBar start={2007} events={experiences} />

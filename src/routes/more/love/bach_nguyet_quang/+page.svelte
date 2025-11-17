@@ -17,7 +17,7 @@
 	];
 </script>
 
-<main class="text-yellow mx-auto w-4xl py-20">
+<main class="mx-auto w-4xl py-20">
 	<div class="bg-dark-sm border-yellow space-y-4 rounded-xl border p-6">
 		<a href="/more/love">
 			<Home />
@@ -39,7 +39,7 @@
 			</tbody>
 		</table>
 		<p class="text-yellow-light">
-			<span class="text-yellow font-semibold">Mô tả: </span>
+			<span class="font-semibold">Mô tả: </span>
 			Chị xinh và cute, đơn giản thế thôi 🥰 🥰. Mình biết việc chị làm nhưng mà mình lỡ mê vẻ đẹp này
 			mất rồi 🥲 nên là mình vẫn có thể chấp nhận.
 		</p>

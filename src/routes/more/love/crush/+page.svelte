@@ -10,7 +10,7 @@
 	];
 </script>
 
-<main class="text-yellow mx-auto w-4xl py-20">
+<main class="mx-auto w-4xl py-20">
 	<div class="bg-dark-sm border-yellow space-y-4 rounded-xl border p-6">
 		<a href="/more/love">
 			<Home />
@@ -28,7 +28,7 @@
 			</tbody>
 		</table>
 		<p class="text-yellow-light">
-			<span class="text-yellow font-semibold">Mô tả: </span>
+			<span class="font-semibold">Mô tả: </span>
 			Mình crush bạn này từ năm lớp 4. Đến năm cấp 2 thì được học cùng lớp với bạn, nhưng mà mình với
 			bạn cũng ít khi nào nói chuyện với nhau. Vì thế mà mình không dám nói ra suy nghĩ của mình. Đến
 			cấp 3 thì mình lên Hà Nội học nên cũng hiếm khi gặp bạn nữa. Mặc dù vậy, mình vẫn chưa ngừng thích

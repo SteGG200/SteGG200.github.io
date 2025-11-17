@@ -14,7 +14,7 @@
 	<div class="h-full">
 		<IntroSection />
 		<div class="mt-16 mb-10 w-full">
-			<ChevronsDown size={32} class="text-yellow mx-auto animate-bounce" />
+			<ChevronsDown size={32} class="mx-auto animate-bounce" />
 		</div>
 	</div>
 	<InformationSection />

@@ -3,5 +3,5 @@
 </script>
 
 <div class="flex min-h-dvh items-center justify-center">
-	<LoaderCircle strokeWidth={1.5} size={80} class="text-yellow animate-spin" />
+	<LoaderCircle strokeWidth={1.5} size={80} class="animate-spin" />
 </div>

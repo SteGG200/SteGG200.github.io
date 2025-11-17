@@ -2,7 +2,7 @@
 	import { Home } from 'lucide-svelte';
 </script>
 
-<main class="text-yellow flex min-h-dvh w-full p-16 text-xl">
+<main class="flex min-h-dvh w-full p-16 text-xl">
 	<div class="bg-dark-sm flex-1 rounded-xl p-8">
 		<a href="/">
 			<Home />

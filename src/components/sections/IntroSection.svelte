@@ -30,7 +30,7 @@
 	</div>
 	<!-- Introduction -->
 	<div class="flex w-1/2 items-center max-2xl:w-2/3 max-2xl:justify-center max-lg:w-full">
-		<div class="text-yellow flex w-2/3 flex-col justify-center space-y-7 max-lg:w-3/4">
+		<div class="flex w-2/3 flex-col justify-center space-y-7 max-lg:w-3/4">
 			<h1 class="text-6xl font-semibold max-lg:text-5xl max-sm:text-4xl">
 				Hi, It's <span>Binh</span>
 			</h1>

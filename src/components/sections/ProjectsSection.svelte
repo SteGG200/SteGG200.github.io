@@ -26,7 +26,7 @@
 	];
 </script>
 
-<section id="projects" class="text-yellow w-full">
+<section id="projects" class="w-full">
 	<div class="w-project-section mx-auto space-y-4 max-xl:w-5/6 max-md:w-11/12">
 		<LabelSection>MY PROJECTS</LabelSection>
 		<div class="grid w-full grid-cols-3 gap-6 max-xl:grid-cols-2 max-md:grid-cols-1">
