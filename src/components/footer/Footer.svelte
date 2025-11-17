@@ -1,6 +1,8 @@
 <script lang="ts">
 	import PersonalLink from '$components/PersonalLink.svelte';
-	import { Facebook, Github, Mail } from 'lucide-svelte';
+	import { Mail } from 'lucide-svelte';
+	import Facebook from '$components/icons/Facebook.svelte';
+	import Github from '$components/icons/Github.svelte';
 </script>
 
 <footer class="border-yellow text-yellow w-full border-t-1 py-6">

@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { type Icon as IconType } from 'lucide-svelte';
+	import type { Component } from 'svelte';
 
 	interface PersonalLinkProps {
-		Icon: typeof IconType;
+		Icon: typeof IconType | Component<IconCustomProps>;
 		href: string;
 		size?: number;
 	}

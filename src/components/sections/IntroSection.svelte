@@ -2,7 +2,9 @@
 	import PersonalLink from '$components/PersonalLink.svelte';
 	import TypingDescription from '$components/TypingDescription.svelte';
 	import avatar from '$lib/assets/avatar.jpg';
-	import { Facebook, Github, Mail } from 'lucide-svelte';
+	import { Mail } from 'lucide-svelte';
+	import Facebook from '$components/icons/Facebook.svelte';
+	import Github from '$components/icons/Github.svelte';
 </script>
 
 <section class="flex w-full max-lg:flex-col max-lg:items-center max-lg:space-y-6">
