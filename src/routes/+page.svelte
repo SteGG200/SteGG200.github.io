@@ -8,6 +8,10 @@
 	import { ChevronsDown } from 'lucide-svelte';
 </script>
 
+<svelte:head>
+	<title>SteGG</title>
+</svelte:head>
+
 <Header />
 
 <main class="mb-20 flex flex-col space-y-20">

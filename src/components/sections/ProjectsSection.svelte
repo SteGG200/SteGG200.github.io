@@ -1,6 +1,6 @@
 <script lang="ts">
 	import LabelSection from '$components/LabelSection.svelte';
-	import ProjectCard from '$components/ProjectCard.svelte';
+	import ProjectCard from '$components/cards/ProjectCard.svelte';
 
 	const repositories: IRepository[] = [
 		{

@@ -13,6 +13,8 @@
 	--spacing-experience-section: 1200px;
 	--spacing-bar: 10px;
 	--spacing-project-section: 1200px;
+	--spacing-blogs-list: 1040px;
+	--spacing-blog: 990px;
 
 	--aspect-banner: 263/700;
 
@@ -151,5 +153,77 @@
 				transform: scale(1);
 			}
 		}
+	}
+}
+
+@utility markdown-render {
+	@apply text-yellow-light;
+	@apply space-y-6;
+	& h1 {
+		@apply pb-2;
+		@apply text-yellow;
+		@apply text-3xl;
+		@apply font-bold;
+		@apply border-b;
+		@apply border-yellow;
+	}
+
+	& h2 {
+		@apply pb-2;
+		@apply text-yellow;
+		@apply text-2xl;
+		@apply font-semibold;
+		@apply border-b;
+		@apply border-yellow;
+	}
+
+	& h3 {
+		@apply text-yellow;
+		@apply text-xl;
+		@apply font-semibold;
+	}
+
+	& ol {
+		@apply space-y-3;
+		@apply list-decimal;
+		@apply pl-8;
+	}
+
+	& ul {
+		@apply space-y-3;
+		@apply list-disc;
+		@apply pl-8;
+	}
+
+	& ul ul {
+		@apply list-[circle];
+	}
+
+	& ul ul ul {
+		@apply list-[square];
+	}
+
+	& li {
+		@apply space-y-2;
+	}
+
+	& a {
+		@apply underline;
+		@apply text-yellow;
+		@apply hover:text-yellow-light;
+	}
+
+	& code {
+		@apply bg-dark-sm;
+		@apply rounded-md;
+		@apply p-0.5;
+	}
+
+	& blockquote {
+		@apply px-4;
+		@apply py-2;
+		@apply border-l-2;
+		@apply border-yellow;
+		@apply space-y-4;
 	}
 }
