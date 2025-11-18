@@ -18,7 +18,7 @@
 		<table class="w-full max-sm:table-fixed">
 			<tbody class="[&_tr:last-child]:border-0">
 				{#each generalInformation as row}
-					<tr class="border-yellow border-b-1">
+					<tr class="border-yellow border-b">
 						<td class="p-4 align-middle max-md:p-3 max-sm:p-2">{row.label}</td>
 						<td class="text-yellow-light p-4 align-middle max-md:p-3 max-sm:p-2">{row.value}</td>
 					</tr>
