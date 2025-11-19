@@ -194,6 +194,7 @@
 		@apply font-bold;
 		@apply border-b;
 		@apply border-yellow;
+		@apply scroll-mt-30;
 	}
 
 	& h2 {
@@ -203,12 +204,14 @@
 		@apply font-semibold;
 		@apply border-b;
 		@apply border-yellow;
+		@apply scroll-mt-30;
 	}
 
 	& h3 {
 		@apply text-yellow;
 		@apply text-xl;
 		@apply font-semibold;
+		@apply scroll-mt-30;
 	}
 
 	& ol {
