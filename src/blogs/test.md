@@ -2,27 +2,18 @@
 
 *   [Overview](#overview)
     *   [Philosophy](#philosophy)
-    *   [Inline HTML](#html)
-    *   [Automatic Escaping for Special Characters](#autoescape)
 *   [Block Elements](#block)
-    *   [Paragraphs and Line Breaks](#p)
+    *   [Paragraphs and Line Breaks](#paragraphs-and-line-breaks)
     *   [Headers](#headers)
     *   [Blockquotes](#blockquotes)
     *   [Lists](#lists)
     *   [Code Blocks](#code-blocks)
-    *   [Horizontal Rules](#horizontal-rules)
 *   [Span Elements](#span-elements)
     *   [Links](#links)
     *   [Emphasis](#emphasis)
     *   [Code](#code)
-    *   [Images](#images)
-*   [Miscellaneous](#miscellaneous)
-    *   [Backslash Escapes](#backslash-escapes)
-    *   [Automatic Links](#autolink)
 
-
-**Note:** This document is itself written using Markdown; you
-can [see the source for it by adding '.text' to the URL](/projects/markdown/syntax.text).
+**Note:** This document is itself written using Markdown
 
 ----
 

@@ -1,12 +1,20 @@
 <script lang="ts">
 	import { Status } from '$lib'
 	import { Calendar, Tags } from 'lucide-svelte';
-	import hljs from 'highlight.js';
+	import hljs from 'highlight.js/lib/core';
+	import plaintext from 'highlight.js/lib/languages/plaintext'
+	import bash from 'highlight.js/lib/languages/bash'
+	import c from 'highlight.js/lib/languages/c'
+	import python from 'highlight.js/lib/languages/python'
 	import 'highlight.js/styles/atom-one-dark.min.css'
 
 	let { data } = $props()
 
 	$effect(() => {
+		hljs.registerLanguage('python', python)
+		hljs.registerLanguage('c', c)
+		hljs.registerLanguage('bash', bash)
+		hljs.registerLanguage('plaintext', plaintext)
 		hljs.highlightAll();
 	})
 </script>
