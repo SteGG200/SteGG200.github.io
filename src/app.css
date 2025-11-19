@@ -74,6 +74,34 @@
 	}
 }
 
+@utility menu-dropdown {
+	@apply block;
+	@apply w-full;
+	@apply fixed;
+	@apply bg-dark;
+	@apply border-b;
+	@apply border-yellow;
+	@apply transition-all;
+	@apply duration-500;
+
+	&> nav {
+		@apply pb-8;
+		@apply flex;
+		@apply flex-col;
+		@apply space-x-0;
+		@apply space-y-4;
+		@apply items-center;
+	}
+}
+
+@utility overlay {
+	@apply bg-dark/50;
+	@apply fixed;
+	@apply w-full;
+	@apply h-full;
+	@apply z-20;
+}
+
 @utility absolute-avatar-center {
 	top: calc(44% / 2);
 	left: calc(44% / 2);

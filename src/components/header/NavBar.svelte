@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<nav class="space-x-14 text-lg font-semibold">
+<nav class="space-x-14 max-xl:space-x-8 text-lg font-semibold">
 	<a class="hover:text-yellow-light transition-colors" href="/#info">Information</a>
 	<a class="hover:text-yellow-light transition-colors" href="/#experiences">Experiences</a>
 	<a class="hover:text-yellow-light transition-colors" href="/#projects">Projects</a>
