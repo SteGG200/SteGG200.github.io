@@ -12,8 +12,8 @@
 	let { id, title, preview, tags, createdAt }: BlogCardProps = $props()
 </script>
 
-<div class="border border-yellow rounded-lg p-5 space-y-2">
-	<h3 class="font-semibold text-2xl">
+<div class="border border-yellow rounded-lg p-5 max-md:p-3 space-y-2">
+	<h3 class="font-semibold text-3xl max-md:text-2xl">
 		<a class="hover:text-yellow-light transition-colors" href={`/blog/${id}`}>{title}</a>
 	</h3>
 	<p class="text-yellow-light">
