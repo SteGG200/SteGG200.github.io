@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Footer from "$components/footer/Footer.svelte";
-	import Header from "$components/header/Header.svelte";
+	import Footer from '$components/footer/Footer.svelte';
+	import Header from '$components/header/Header.svelte';
 
-	let { children } = $props()
+	let { children } = $props();
 </script>
 
-<Header/>
+<Header />
 
 {@render children()}
 
-<Footer/>
+<Footer />

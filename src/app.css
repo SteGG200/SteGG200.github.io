@@ -70,7 +70,7 @@
 		background-color: var(--color-dark);
 		width: 100%;
 		min-height: 100dvh;
-		@apply text-yellow
+		@apply text-yellow;
 	}
 }
 
@@ -84,7 +84,7 @@
 	@apply transition-all;
 	@apply duration-500;
 
-	&> nav {
+	& > nav {
 		@apply pb-8;
 		@apply flex;
 		@apply flex-col;
