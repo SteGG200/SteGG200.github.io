@@ -1,5 +1,6 @@
 import type { PageServerLoad } from "./$types"
 import { marked } from 'marked'
+import { gfmHeadingId } from 'marked-gfm-heading-id'
 import { Status } from "$lib"
 import fs from 'fs/promises'
 import blogs from '$blogs/blog.json'
@@ -17,7 +18,8 @@ export const load: PageServerLoad = async ({ params }) => {
 	
 	try {
 		const markdown = await fs.readFile(`./src/blogs/${blog.file}`, "utf8")
-		const content = marked.parse(markdown)
+		marked.use(gfmHeadingId())
+		const content = marked(markdown)
 
 		return {
 			status: Status.SUCCESS,
