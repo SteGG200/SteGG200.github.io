@@ -35,7 +35,7 @@
 				<div class="flex items-center space-x-1">
 					<Tags />
 					<span class="text-yellow-light">
-						{#each data.blog.tags as tag, index}
+						{#each data.blog.tags as tag, index (index)}
 							{`${tag}${index == data.blog.tags.length - 1 ? '' : ' | '}`}
 						{/each}
 					</span>

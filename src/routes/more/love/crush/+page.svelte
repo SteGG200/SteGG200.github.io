@@ -19,7 +19,7 @@
 		<h2 class="text-2xl font-semibold">Phạm Mai Hương</h2>
 		<table>
 			<tbody>
-				{#each info as row}
+				{#each info as row, index (index)}
 					<tr>
 						<td class="p-3 align-middle font-semibold">{row.label}:</td>
 						<td class="text-yellow-light p-3 align-middle">{row.value}</td>

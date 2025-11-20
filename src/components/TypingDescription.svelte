@@ -49,7 +49,7 @@
 
 <h3 class="text-4xl font-semibold max-lg:text-3xl max-sm:text-2xl">
 	I'm a
-	{#each descriptions as description, index}
+	{#each descriptions as description, index (index)}
 		{#if index == currentIndexDescription}
 			<span class="after:animate-cursor after:border-l-2" in:typingAnimation={{ speed: 0.5 }}
 				>{description}</span

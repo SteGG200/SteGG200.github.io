@@ -12,7 +12,7 @@
 <div class="flex w-full flex-col items-center space-y-2">
 	<span class="text-lg">{currentYear}</span>
 	<div class="after:timeline relative h-[800px] w-full">
-		{#each events as event, index}
+		{#each events as event, index (index)}
 			<div
 				class="border-yellow before:line after:point absolute rounded-lg border p-2 max-md:p-1.5"
 				class:left-event={index % 2 == 0}

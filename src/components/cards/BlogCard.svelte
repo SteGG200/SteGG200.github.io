@@ -32,7 +32,7 @@
 			<span class="flex items-center">
 				<Tags size={20} strokeWidth={2} class="mr-1" />
 				<span class="text-yellow-light">
-					{#each tags as tag, index}
+					{#each tags as tag, index (index)}
 						{`${tag}${index == tags.length - 1 ? '' : ' | '}`}
 					{/each}
 				</span>

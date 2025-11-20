@@ -15,7 +15,7 @@
 		isOpenMenu = false;
 	};
 
-	const handleClick = (event: PointerEvent) => {
+	function handleClick(this: Document, event: MouseEvent) {
 		if (!event.target) return;
 		const element = event.target as HTMLElement;
 		if (
@@ -24,7 +24,7 @@
 		)
 			return;
 		closeMenu();
-	};
+	}
 
 	$effect(() => {
 		document.addEventListener('click', handleClick);
