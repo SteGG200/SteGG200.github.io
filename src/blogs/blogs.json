@@ -2,6 +2,7 @@
 	{
 		"file": "test.md",
 		"title": "Test thôi",
+		"preview": "Preview is going here",
 		"tags": ["test"],
 		"createdAt": "2025-11-17"
 	}

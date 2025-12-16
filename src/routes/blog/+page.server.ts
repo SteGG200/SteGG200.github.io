@@ -1,5 +1,5 @@
 import type { PageServerLoad } from './$types';
-import blogs from '$blogs/blog.json';
+import blogs from '$blogs/blogs.json';
 
 export const load: PageServerLoad = async () => {
 	const handledBlogs = blogs.map(({ title, preview, tags, createdAt }) => {

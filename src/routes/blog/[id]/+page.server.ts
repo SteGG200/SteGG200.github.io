@@ -3,7 +3,7 @@ import { marked } from 'marked';
 import { gfmHeadingId } from 'marked-gfm-heading-id';
 import { Status } from '$lib';
 import fs from 'fs/promises';
-import blogs from '$blogs/blog.json';
+import blogs from '$blogs/blogs.json';
 
 export const load: PageServerLoad = async ({ params }) => {
 	const id = parseInt(params.id);
