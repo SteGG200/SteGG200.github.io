@@ -8,7 +8,7 @@
 	},
 	{
 		"file": "re-alloc.md",
-		"title": "Binary Exploitation [pwnable.tw] - Realloc",
+		"title": "Re-alloc - pwnable.tw",
 		"tags": ["pwn"],
 		"createdAt": "2025-12-16"
 	}
