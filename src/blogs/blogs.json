@@ -5,5 +5,11 @@
 		"preview": "Preview is going here",
 		"tags": ["test"],
 		"createdAt": "2025-11-17"
+	},
+	{
+		"file": "re-alloc.md",
+		"title": "Binary Exploitation [pwnable.tw] - Realloc",
+		"tags": ["pwn"],
+		"createdAt": "2025-12-16"
 	}
 ]
