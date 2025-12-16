@@ -202,11 +202,11 @@ printf_plt = exe.plt['printf']
 allocate(0, 0x20, p64(printf_plt))
 ```
 
-- With the above, we leaked the data from stack and get libc address.
+- With the code above, we leaked the data from stack when do an operation and get libc base address.
 
 ## Get Shell
 - Now we have libc base address, so we can calculate the address of `system` function and again overwrite `atoll` function to `system` function.
-- However, `atoll` now became `printf` which returns the number of output character. Therefore, we should change to a more appropriate way.
+- However, `atoll` now became `printf` which returns the number of output character. Therefore, we should input in a more appropriate way.
 
 ## Exploit Code
 ```python
