@@ -2,4 +2,7 @@ User-agent: Googlebot
 User-agent: AdsBot-Google
 Disallow: /more/love/
 
+User-agent: *
+Allow: /
+
 Sitemap: https://stegg200.github.io/sitemap.xml
