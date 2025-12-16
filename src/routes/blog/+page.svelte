@@ -17,7 +17,7 @@
 	<h1 class="text-center text-4xl font-semibold max-md:text-3xl">SteGG's Blogs</h1>
 	<div class="w-blogs-list mx-auto max-xl:w-5/6 max-md:w-11/12 space-y-4">
 		{#each data.blogs as blog, index (index)}
-			<BlogCard id={index + 1} title={blog.title} tags={blog.tags} createdAt={blog.createdAt} />
+			<BlogCard id={blog.id + 1} title={blog.title} tags={blog.tags} createdAt={blog.createdAt} />
 		{/each}
 	</div>
 </main>
