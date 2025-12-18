@@ -9,7 +9,13 @@
 	{
 		"file": "re-alloc.md",
 		"title": "Re-alloc - pwnable.tw",
-		"tags": ["pwn"],
+		"tags": ["pwn", "pwnable.tw"],
 		"createdAt": "2025-12-16"
+	},
+	{
+		"file": "3x17.md",
+		"title": "3x17 - pwnable.tw",
+		"tags": ["pwn", "pwnable.tw"],
+		"createdAt": "2025-12-18"
 	}
 ]
