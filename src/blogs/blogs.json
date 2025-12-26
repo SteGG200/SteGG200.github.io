@@ -17,5 +17,11 @@
 		"title": "3x17 - pwnable.tw",
 		"tags": ["pwn", "pwnable.tw"],
 		"createdAt": "2025-12-18"
+	},
+	{
+		"file": "hacknote.md",
+		"title": "hacknote -pwnable.tw",
+		"tags": ["pwn", "pwnable.tw"],
+		"createdAt": "2025-12-26"
 	}
 ]
