@@ -20,8 +20,14 @@
 	},
 	{
 		"file": "hacknote.md",
-		"title": "hacknote -pwnable.tw",
+		"title": "hacknote - pwnable.tw",
 		"tags": ["pwn", "pwnable.tw"],
 		"createdAt": "2025-12-26"
+	},
+	{
+		"file": "silver_bullet.md",
+		"title": "Silver Bullet - pwnable.tw",
+		"tags": ["pwn", "pwnable.tw"],
+		"createdAt": "2025-12-29"
 	}
 ]
