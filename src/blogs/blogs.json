@@ -29,5 +29,11 @@
 		"title": "Silver Bullet - pwnable.tw",
 		"tags": ["pwn", "pwnable.tw"],
 		"createdAt": "2025-12-29"
+	},
+	{
+		"file": "applestore.md",
+		"title": "applestore - pwnable.tw",
+		"tags": ["pwn", "pwnable.tw"],
+		"createdAt": "2026-02-22"
 	}
 ]
