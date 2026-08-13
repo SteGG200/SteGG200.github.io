@@ -1,83 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-       <loc>https://stegg200.github.io/</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0000</priority>
+    <loc>https://stegg200.github.io/</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/info</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://stegg200.github.io/info</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/exp</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://stegg200.github.io/exp</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/proj</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://stegg200.github.io/proj</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/blog</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
+    <loc>https://stegg200.github.io/blog</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/blog/john_wick</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
+    <loc>https://stegg200.github.io/blog/john_wick</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/blog/applestore</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
+    <loc>https://stegg200.github.io/blog/applestore</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/blog/silver_bullet</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
+    <loc>https://stegg200.github.io/blog/silver_bullet</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/blog/hacknote</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
+    <loc>https://stegg200.github.io/blog/hacknote</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/blog/3x17</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
+    <loc>https://stegg200.github.io/blog/3x17</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/blog/re-alloc</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
+    <loc>https://stegg200.github.io/blog/re-alloc</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/blog/test</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
+    <loc>https://stegg200.github.io/blog/test</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-       <loc>https://stegg200.github.io/blog/how-to-become-a-developer</loc>
-       <lastmod>2026-08-13T12:14:16+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6400</priority>
+    <loc>https://stegg200.github.io/blog/how-to-become-a-developer</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
