@@ -100,13 +100,13 @@ export function getBlogBySlug(
 					? hljs.highlight(text, { language }).value
 					: text;
 
-				// Process code into lines with line numbers
+				// Process code into lines with line numbers and preserved tab indentation
 				const lines = highlighted.split('\n');
 				const numberedLines = lines
-					.map(
-						(line, index) =>
-							`<tr class="hover:bg-lol-border/50"><td class="select-none text-right pr-4 text-lol-text-muted/50 w-10 text-xs">${index + 1}</td><td class="pr-4">${line || ' '}</td></tr>`,
-					)
+					.map((line, index) => {
+						const formattedLine = (line || ' ').replace(/\t/g, ' '.repeat(3));
+						return `<tr class="hover:bg-lol-border/50"><td class="select-none text-right pr-4 text-lol-text-muted/50 w-10 text-xs">${index + 1}</td><td class="pr-4 font-mono whitespace-pre">${formattedLine}</td></tr>`;
+					})
 					.join('');
 
 				const rawCodeEncoded = encodeURIComponent(text);

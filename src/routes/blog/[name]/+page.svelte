@@ -165,6 +165,16 @@
 		color: #c8aa6e;
 	}
 
+	:global(article :not(pre) > code) {
+		background-color: rgba(10, 20, 40, 0.8);
+		color: #c8aa6e;
+		border: 1px solid #463714;
+		border-radius: 0.25rem;
+		padding: 0.15rem 0.4rem;
+		font-family: monospace;
+		font-size: 0.825rem;
+	}
+
 	:global(article pre) {
 		overflow-x: auto;
 		border-radius: 0.375rem;
