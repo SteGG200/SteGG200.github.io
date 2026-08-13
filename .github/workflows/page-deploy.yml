@@ -2,16 +2,16 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main'
+    branches: 'master'
 
 jobs:
   build_site:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Install pnpm
+      - name: Install package manager
         uses: pnpm/action-setup@v6
         with:
           version: 9
@@ -26,14 +26,13 @@ jobs:
         run: pnpm install
 
       - name: build
-        run: |
-          pnpm build
+        run: pnpm build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v5
         with:
           # this should match the `pages` option in your adapter-static options
-          path: 'build/'
+          path: './build'
 
   deploy:
     needs: build_site
