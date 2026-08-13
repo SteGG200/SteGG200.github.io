@@ -1,7 +1,7 @@
 export interface BlogFrontmatter {
 	title: string;
 	tags: string[];
-	createdAt: string;
+	createdAt: Date;
 }
 
 export interface BlogPost {

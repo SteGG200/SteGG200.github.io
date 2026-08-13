@@ -1,7 +1,7 @@
 ---
 title: hOw To BeCaMe A dEvElOpEr
 tags: ['IT', 'Guide']
-createdAt: 2026-7-31
+createdAt: 2024-12-25
 ---
 
 # Introduction to Development

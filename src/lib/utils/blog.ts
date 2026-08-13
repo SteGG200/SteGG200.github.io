@@ -6,7 +6,7 @@ import hljs from 'highlight.js/lib/core';
 import bash from 'highlight.js/lib/languages/bash';
 import cpp from 'highlight.js/lib/languages/cpp';
 import python from 'highlight.js/lib/languages/python';
-import type { BlogPost, TocItem } from '$lib/types/blog';
+import type { BlogFrontmatter, BlogPost, TocItem } from '$lib/types/blog';
 
 // Register ONLY specified languages per spec requirement
 hljs.registerLanguage('bash', bash);
@@ -31,6 +31,7 @@ export function getAllBlogs(): BlogPost[] {
 		const filePath = path.join(BLOGS_DIR, file);
 		const fileContent = fs.readFileSync(filePath, 'utf-8');
 		const { data, content } = matter(fileContent);
+		const blogFrontmatter = data as BlogFrontmatter;
 
 		// Generate clean preview (strip markdown formatting)
 		const cleanContent = content
@@ -43,15 +44,25 @@ export function getAllBlogs(): BlogPost[] {
 
 		return {
 			slug,
-			title: data.title || slug,
-			tags: Array.isArray(data.tags) ? data.tags : [],
-			createdAt: data.createdAt ? String(data.createdAt) : 'Unknown',
+			title: blogFrontmatter.title || slug,
+			tags: Array.isArray(blogFrontmatter.tags) ? blogFrontmatter.tags : [],
+			createdAt: blogFrontmatter.createdAt
+				? blogFrontmatter.createdAt.toLocaleDateString('en-GB')
+				: 'Unknown',
 			preview,
 		};
 	});
 
 	// Sort by date descending
-	return blogs.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+	return blogs.sort((a, b) => {
+		if (a.createdAt === 'Unknown') return 1;
+		if (b.createdAt === 'Unknown') return -1;
+		const [dayA, monthA, yearA] = a.createdAt.split('/').map(Number);
+		const [dayB, monthB, yearB] = b.createdAt.split('/').map(Number);
+		const dateA = new Date(yearA, monthA - 1, dayA);
+		const dateB = new Date(yearB, monthB - 1, dayB);
+		return dateB.getTime() - dateA.getTime();
+	});
 }
 
 export function getBlogBySlug(
@@ -64,6 +75,7 @@ export function getBlogBySlug(
 
 	const fileContent = fs.readFileSync(filePath, 'utf-8');
 	const { data, content } = matter(fileContent);
+	const blogFrontmatter = data as BlogFrontmatter;
 
 	const toc: TocItem[] = [];
 
@@ -122,9 +134,11 @@ export function getBlogBySlug(
 
 	const blog: BlogPost = {
 		slug,
-		title: data.title || slug,
-		tags: Array.isArray(data.tags) ? data.tags : [],
-		createdAt: data.createdAt ? String(data.createdAt) : 'Unknown',
+		title: blogFrontmatter.title || slug,
+		tags: Array.isArray(blogFrontmatter.tags) ? blogFrontmatter.tags : [],
+		createdAt: blogFrontmatter.createdAt
+			? blogFrontmatter.createdAt.toLocaleDateString('en-BG')
+			: 'Unknown',
 		preview: '',
 		content,
 	};
