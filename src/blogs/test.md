@@ -7,7 +7,7 @@ createdAt: 2025-11-17
 
 - [Overview](#overview)
   - [Philosophy](#philosophy)
-- [Block Elements](#block)
+- [Block Elements](#block-elements)
   - [Paragraphs and Line Breaks](#paragraphs-and-line-breaks)
   - [Headers](#headers)
   - [Blockquotes](#blockquotes)
