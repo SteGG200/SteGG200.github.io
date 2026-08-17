@@ -9,7 +9,7 @@
 		{ name: 'INFORMATION', href: '/info' },
 		{ name: 'EXPERIENCES', href: '/exp' },
 		{ name: 'PROJECTS', href: '/proj' },
-		{ name: 'BLOGS', href: '/blog' }
+		{ name: 'BLOGS', href: '/blog' },
 	];
 
 	function isActive(href: string): boolean {

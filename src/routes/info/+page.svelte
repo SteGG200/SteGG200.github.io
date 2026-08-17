@@ -11,7 +11,7 @@
 		{ label: 'BIRTHDAY', value: '2007-10-20', icon: Calendar },
 		{ label: 'LOCATION', value: 'Hà Nội, Việt Nam', icon: MapPin },
 		{ label: 'CURRENT JOB', value: 'Software Developer / Student', icon: Briefcase },
-		{ label: 'HOBBIES', value: 'League of Legends, Coding, Open Source, Gaming', icon: Zap }
+		{ label: 'HOBBIES', value: 'League of Legends, Coding, Open Source, Gaming', icon: Zap },
 	];
 </script>
 
@@ -96,15 +96,11 @@
 				<div class="mt-1 text-xs font-bold text-lol-blue">MASTERY 7</div>
 			</div>
 			<div class="rounded border border-lol-gold-dark bg-lol-bg-panel p-3">
-				<div class="font-['Beaufort'] text-sm font-bold text-lol-gold sm:text-lg">
-					TailwindCSS
-				</div>
+				<div class="font-['Beaufort'] text-sm font-bold text-lol-gold sm:text-lg">TailwindCSS</div>
 				<div class="mt-1 text-xs font-bold text-lol-blue">MASTERY 7</div>
 			</div>
 			<div class="rounded border border-lol-gold-dark bg-lol-bg-panel p-3">
-				<div class="font-['Beaufort'] text-sm font-bold text-lol-gold sm:text-lg">
-					Python / C++
-				</div>
+				<div class="font-['Beaufort'] text-sm font-bold text-lol-gold sm:text-lg">Python / C++</div>
 				<div class="mt-1 text-xs font-bold text-lol-blue">MASTERY 6</div>
 			</div>
 		</div>

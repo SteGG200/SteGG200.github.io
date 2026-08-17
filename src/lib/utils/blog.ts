@@ -65,6 +65,28 @@ export function getAllBlogs(): BlogPost[] {
 	});
 }
 
+function splitHighlightedLines(html: string): string[] {
+	const rawLines = html.split('\n');
+	const activeSpans: string[] = [];
+
+	return rawLines.map((line) => {
+		const lineStart = activeSpans.join('');
+
+		const tagRegex = /<span[^>]*>|<\/span>/g;
+		let match: RegExpExecArray | null;
+		while ((match = tagRegex.exec(line)) !== null) {
+			if (match[0] === '</span>') {
+				activeSpans.pop();
+			} else {
+				activeSpans.push(match[0]);
+			}
+		}
+
+		const lineEnd = '</span>'.repeat(activeSpans.length);
+		return lineStart + line + lineEnd;
+	});
+}
+
 export function getBlogBySlug(
 	slug: string,
 ): { blog: BlogPost; html: string; toc: TocItem[] } | null {
@@ -100,8 +122,8 @@ export function getBlogBySlug(
 					? hljs.highlight(text, { language }).value
 					: text;
 
-				// Process code into lines with line numbers and preserved tab indentation
-				const lines = highlighted.split('\n');
+				// Process code into lines with line numbers, preserved tab indentation, and closed spans across lines
+				const lines = splitHighlightedLines(highlighted);
 				const numberedLines = lines
 					.map((line, index) => {
 						const formattedLine = (line || ' ').replace(/\t/g, ' '.repeat(3));
