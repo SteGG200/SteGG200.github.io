@@ -1,7 +1,7 @@
 ---
 title: Silver Bullet - pwnable.tw
 tags:
-  - Binary Exploit
+  - binary exploit
   - pwnable.tw
 createdAt: 2025-12-29
 ---

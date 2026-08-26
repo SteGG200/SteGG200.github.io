@@ -1,8 +1,8 @@
 ---
 title: John Wick - BKSEC
 tags:
-  - Binary Exploit
-  - BKSEC
+  - binary exploit
+  - bksec
 createdAt: 2026-03-19
 ---
 

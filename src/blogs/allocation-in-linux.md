@@ -1,8 +1,8 @@
 ---
 title: Allocator In Linux Kernel
 tags:
-  - Kernel Exploit
-  - Guide
+  - kernel exploit
+  - guide
 createdAt: 2026-08-14
 ---
 

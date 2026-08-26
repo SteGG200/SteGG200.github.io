@@ -1,14 +1,14 @@
 ---
 title: r_jh0213's hip - dreamhack.io
 tags:
-  - Binary Exploit
+  - binary exploit
   - dreamhack.io
 createdAt: 2026-08-26
 ---
 
 # Challenge Description
 
-- Source challenge: https://dreamhack.io/wargame/challenges/1730
+- Source challenge: [r_jh0213's hip](https://dreamhack.io/wargame/challenges/1730)
 
 ## File Type
 

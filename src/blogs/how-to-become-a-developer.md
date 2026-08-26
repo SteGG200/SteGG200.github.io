@@ -1,6 +1,6 @@
 ---
 title: hOw To BeCaMe A dEvElOpEr
-tags: ['IT', 'Guide']
+tags: ['it', 'guide']
 createdAt: 2024-12-25
 ---
 

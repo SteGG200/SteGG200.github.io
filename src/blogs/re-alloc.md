@@ -1,7 +1,7 @@
 ---
 title: Re-alloc - pwnable.tw
 tags:
-  - Binary Exploit
+  - binary exploit
   - pwnable.tw
 createdAt: 2025-12-16
 ---

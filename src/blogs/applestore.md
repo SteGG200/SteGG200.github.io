@@ -1,7 +1,7 @@
 ---
 title: applestore - pwnable.tw
 tags:
-  - Binary Exploit
+  - binary exploit
   - pwnable.tw
 createdAt: 2026-02-22
 ---
