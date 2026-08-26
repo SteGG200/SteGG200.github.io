@@ -19,6 +19,13 @@ hljs.registerLanguage('py', python);
 
 const BLOGS_DIR = path.join(process.cwd(), 'src', 'blogs');
 
+function toLowerCaseTags(tags: string[] | undefined): string[] {
+	if (!tags) {
+		return [];
+	}
+	return tags.map((tag) => tag.toLowerCase());
+}
+
 export function getAllBlogs(): BlogPost[] {
 	if (!fs.existsSync(BLOGS_DIR)) {
 		return [];
@@ -45,7 +52,7 @@ export function getAllBlogs(): BlogPost[] {
 		return {
 			slug,
 			title: blogFrontmatter.title || slug,
-			tags: Array.isArray(blogFrontmatter.tags) ? blogFrontmatter.tags : [],
+			tags: toLowerCaseTags(blogFrontmatter.tags),
 			createdAt: blogFrontmatter.createdAt
 				? blogFrontmatter.createdAt.toLocaleDateString('en-GB')
 				: 'Unknown',
@@ -157,7 +164,7 @@ export function getBlogBySlug(
 	const blog: BlogPost = {
 		slug,
 		title: blogFrontmatter.title || slug,
-		tags: Array.isArray(blogFrontmatter.tags) ? blogFrontmatter.tags : [],
+		tags: toLowerCaseTags(blogFrontmatter.tags),
 		createdAt: blogFrontmatter.createdAt
 			? blogFrontmatter.createdAt.toLocaleDateString('en-BG')
 			: 'Unknown',
