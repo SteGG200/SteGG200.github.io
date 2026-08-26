@@ -127,3 +127,7 @@ struct mm_struct {
 - Other areas are **Vmemmap Region** and **KASAN Shadow Region**
 
 - The above memory map corresponds to **4-level Page Tables** on **x86-64** arch, and its structure may vary depending on whenther or not the kernel has the `CONFIG_X86_5LEVEL` (5-level page tables)
+
+# Reference
+
+- https://santaclz.github.io/2023/11/03/Linux-Kernel-Exploitation-Getting-started-and-BOF.html

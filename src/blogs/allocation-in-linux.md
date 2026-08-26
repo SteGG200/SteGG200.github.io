@@ -10,7 +10,7 @@ createdAt: 2026-08-14
 
 - Buddy Allocator is a memory management allowing kernel to allocate physically contiguous memory block (page frame)
 - Its strategy is to divide memory block into smaller blocks with power-of-two size.
-- When a allocation request comes in, for example allocate 30, it recursively splits into 2 same smaller chunks, each one is called **buddy** of the other. It keeps doing that until it gets 32-size chunk, which is the smallest chunk but greater or equal to the requested size. This likes a full binary tree.
+- When a allocation request comes in, for example a 30-size chunk, the biggest memmory block recursively splits into 2 smaller chunks, each one is called **buddy** of the other. It keeps doing that until it gets 32-size chunk, which is the smallest chunk but greater or equal to the requested size. This likes a full binary tree.
 - When a chunk is released, it will merge with its buddy and release the parent chunk, except these cases:
   - The released chunk is the biggest size block. It has no more buddy
   - Its buddy chunk is still being used
