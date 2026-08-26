@@ -111,7 +111,7 @@ export function getBlogBySlug(
 					.toLowerCase()
 					.replace(/[^\w\s-]/g, '')
 					.replace(/\s+/g, '-');
-				if (depth === 1 || depth === 2 || depth === 3) {
+				if (depth === 1 || depth === 2) {
 					toc.push({ id, text, level: depth });
 				}
 				return `<h${depth} id="${id}" class="scroll-mt-24">${text}</h${depth}>`;
